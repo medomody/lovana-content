@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "quotes": {
+    "de": [
+      "Guten Morgen, mein Herz — der Tag ist schöner, weil es dich gibt.",
+      "Ich liebe dich nicht nur heute. Ich liebe dich jeden Tag ein bisschen mehr."
+    ],
+    "ar": [
+      "صباح الخير يا قلبي — النهار أجمل لأنك موجود.",
+      "لا أحبك اليوم فقط، بل أحبك كل يوم أكثر من الذي قبله."
+    ],
+    "en": [
+      "Good morning, my heart — the day is brighter because you exist.",
+      "I don't just love you today. I love you a little more every day."
+    ]
+  },
+  "stories": {
+    "de": [
+      {
+        "title": "Der Brief im Buch",
+        "tag": "Romantik · 4 Min.",
+        "open": "In der Bibliothek fand Jonas einen handgeschriebenen Brief in einem alten Gedichtband — adressiert an 'den Menschen, der dieses Buch als Nächstes öffnet'.",
+        "locked": "Der Brief endete mit einer Frage und einem Datum: 'Bist du neugierig genug? Samstag, 15 Uhr, am Brunnen.' Jonas ging hin — und sie wartete schon, mit demselben Gedichtband in der Hand."
+      }
+    ],
+    "ar": [
+      {
+        "title": "الرسالة داخل الكتاب",
+        "tag": "رومانسية · 4 دقائق",
+        "open": "في المكتبة وجد يونس رسالة مكتوبة بخط اليد داخل ديوان شعر قديم — موجهة إلى «الشخص الذي سيفتح هذا الكتاب بعدي».",
+        "locked": "انتهت الرسالة بسؤال وموعد: «هل أنت فضولي بما يكفي؟ السبت، الثالثة عصرًا، عند النافورة.» ذهب يونس — وكانت تنتظر هناك، وفي يدها الديوان نفسه."
+      }
+    ],
+    "en": [
+      {
+        "title": "The Letter in the Book",
+        "tag": "Romance · 4 min read",
+        "open": "In the library, Jonas found a handwritten letter tucked inside an old poetry book — addressed to 'whoever opens this book next'.",
+        "locked": "The letter ended with a question and a date: 'Are you curious enough? Saturday, 3 pm, by the fountain.' Jonas went — and she was already waiting, holding the very same poetry book."
+      }
+    ]
+  }
+}
