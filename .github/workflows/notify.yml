@@ -1,0 +1,30 @@
+name: Push notification on content update
+on:
+  push:
+    branches: [main]        # <- change to master if that's your branch name
+    paths: [content.json]   # <- adjust if content.json is inside a folder
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Send FCM push
+        run: |
+          TOKEN=$(gcloud auth print-access-token)
+          curl -s -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Content-Type: application/json" \
+            https://fcm.googleapis.com/v1/projects/lovana-13a24/messages:send \
+            -d '{
+              "message": {
+                "topic": "all",
+                "notification": {
+                  "title": "Lovana 💌",
+                  "body": "Neue Sprüche und Geschichten sind da! · قصص جديدة وصلت!"
+                }
+              }
+            }'
